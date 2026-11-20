@@ -23,9 +23,13 @@ const MovieSchema = new mongoose.Schema({
     },
     comments: [
         {
-            commentId: {
+            userId: {
                 type: String,
-                default: []
+                required: [true, 'userID is required']
+            },
+            comment: {
+                type: String,
+                required: [true, 'comment is required']
             }
         }
     ]
