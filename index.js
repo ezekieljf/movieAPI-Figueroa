@@ -18,7 +18,7 @@ app.use(express.urlencoded({extended: true}));
 
 
 const corsOptions = {
-    origin: ['http://localhost:8000', 'http://localhost:5173', 'https://fitness-vue-psi.vercel.app'], 
+    origin: ['http://localhost:8000', 'http://localhost:5173', 'https://movie-vue-xi.vercel.app'], 
     credentials: true,
     optionsSuccessStatus: 200
 };
