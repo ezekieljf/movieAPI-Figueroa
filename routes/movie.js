@@ -5,8 +5,8 @@ const { verify, verifyAdmin } = require("../auth");
 const router = express.Router();
 
 // Any User
-router.get("/getMovies", movieController.getMovies);
-router.get("/getMovie/:movieId", movieController.getMovie);
+router.get("/getMovies", verify, movieController.getMovies);
+router.get("/getMovie/:movieId", verify, movieController.getMovie);
 
 // Authenticated Users
 router.patch("/addComment/:movieId", verify, movieController.addComment);
